@@ -5,14 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './cake.component.html',
   styleUrls: ['./cake.component.scss']
 })
-export class CakeComponent implements OnInit {
+export class CakeComponent  {
   ingredients!: string[];
 
   getIngredients(){
-    this.ingredients = ['eggs', "milk", "flour"];
+    return ['eggs', "milk", "flour"];
   }
 
-  ngOnInit(): void {
-    this.getIngredients();
-  }
 }
