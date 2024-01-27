@@ -1,0 +1,9 @@
+<p>toast-containrer works!</p>
+<ul>
+    <li *ngFor="let message of (toastService.messages$ | async)">
+        {{message.type}}
+    </li>
+
+</ul>
+
+{{toastService.messages$ | async}}
