@@ -7,7 +7,8 @@ const routes: Routes = [
   { path: "cake", loadChildren: () => import('./cake/cake.module').then(m => m.CakeModule) ,
     canActivate: [dumbGuard]
 },
-  {path: "temperature", component: TemperatureComponent}
+  {path: "temperature", component: TemperatureComponent},
+  { path: 'tests', loadChildren: () => import('./tests/tests.module').then(m => m.TestsModule) }
 ];
 
 @NgModule({
